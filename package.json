@@ -39,6 +39,9 @@
   "release": {
     "extends": "@forsakringskassan/semantic-release-config"
   },
+  "dependencies": {
+    "@vitest/coverage-v8": "4.0.2"
+  },
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "3.2.0",
     "@forsakringskassan/eslint-config": "13.1.4",
@@ -48,5 +51,8 @@
   "engines": {
     "node": ">= 20",
     "npm": ">= 7"
-  }
+  },
+  "externalDependencies": [
+    "@vitest/coverage-v8"
+  ]
 }
