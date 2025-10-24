@@ -1,0 +1,52 @@
+{
+  "name": "@forsakringskassan/vitest-config",
+  "version": "0.0.0",
+  "description": "Försäkringskassan shareable config for Vitest",
+  "keywords": [
+    "vitest"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/vitest-config#readme",
+  "bugs": {
+    "url": "https://github.com/Forsakringskassan/vitest-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forsakringskassan/vitest-config.git"
+  },
+  "license": "MIT",
+  "author": "Föräkringskassan",
+  "type": "module",
+  "main": "index.mjs",
+  "files": [
+    "index.mjs"
+  ],
+  "scripts": {
+    "eslint": "eslint .",
+    "eslint:fix": "eslint --fix .",
+    "lint": "eslint .",
+    "prepack": "release-prepack --bundle",
+    "postpack": "release-postpack",
+    "prepublishOnly": "release-prepublish --bundle",
+    "prettier:check": "prettier --check. ",
+    "prettier:write": "prettier --write .",
+    "postpublish": "release-postpublish",
+    "test": "npm run eslint && npm run prettier:check"
+  },
+  "commitlint": {
+    "extends": "@forsakringskassan/commitlint-config/no-jira"
+  },
+  "prettier": "@forsakringskassan/prettier-config",
+  "release": {
+    "extends": "@forsakringskassan/semantic-release-config"
+  },
+  "devDependencies": {
+    "@forsakringskassan/commitlint-config": "3.2.0",
+    "@forsakringskassan/eslint-config": "13.1.4",
+    "@forsakringskassan/prettier-config": "3.1.7",
+    "@html-validate/release-scripts": "7.1.0"
+  },
+  "engines": {
+    "node": ">= 20",
+    "npm": ">= 7"
+  }
+}
