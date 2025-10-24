@@ -1,0 +1,10 @@
+{
+    "extends": ["@tsconfig/node20"],
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "emitDeclarationOnly": true,
+        "declaration": true
+    },
+    "include": ["index.mjs"]
+}
