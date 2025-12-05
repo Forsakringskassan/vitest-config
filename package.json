@@ -46,7 +46,7 @@
     "@vitest/coverage-v8": "4.0.14"
   },
   "devDependencies": {
-    "@forsakringskassan/commitlint-config": "3.2.1",
+    "@forsakringskassan/commitlint-config": "3.3.0",
     "@forsakringskassan/eslint-config": "13.2.2",
     "@forsakringskassan/prettier-config": "3.3.0",
     "@html-validate/release-scripts": "7.1.0",
