@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.0.6](https://github.com/Forsakringskassan/vitest-config/compare/v1.0.5...v1.0.6) (2025-12-26)
+
+### Bug Fixes
+
+* **deps:** update dependency @vitest/coverage-v8 to v4.0.16 ([cff7c90](https://github.com/Forsakringskassan/vitest-config/commit/cff7c90bd668b0b09139ff39b0900a2f9f832c19))
+
 ## [1.0.5](https://github.com/Forsakringskassan/vitest-config/compare/v1.0.4...v1.0.5) (2025-12-19)
 
 ### Bug Fixes
