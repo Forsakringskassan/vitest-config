@@ -43,7 +43,7 @@
     "extends": "@forsakringskassan/semantic-release-config"
   },
   "dependencies": {
-    "@vitest/coverage-v8": "4.0.16"
+    "@vitest/coverage-v8": "4.0.17"
   },
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "3.3.2",
