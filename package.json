@@ -16,27 +16,28 @@
   "license": "MIT",
   "author": "Föräkringskassan",
   "type": "module",
-  "main": "index.mjs",
-  "types": "index.d.mts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "bin": {
     "vitest": "vitest.mjs"
   },
   "files": [
-    "index.mjs",
-    "index.d.mts",
+    "dist/",
     "vitest.mjs"
   ],
   "scripts": {
-    "build": "tsc",
+    "prebuild": "tsc",
+    "build": "node build.mjs",
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix .",
-    "lint": "eslint .",
+    "lint": "run-s prettier:check eslint",
     "prepack": "release-prepack --bundle",
     "postpack": "release-postpack",
     "prepublishOnly": "release-prepublish --bundle",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
     "postpublish": "release-postpublish",
+    "pretest": "npm run lint",
     "test": "true"
   },
   "commitlint": {
@@ -56,6 +57,9 @@
     "@forsakringskassan/prettier-config": "3.3.4",
     "@html-validate/release-scripts": "7.1.0",
     "@tsconfig/node20": "20.1.9",
+    "deepmerge": "4.3.1",
+    "esbuild": "0.27.3",
+    "npm-run-all2": "8.0.4",
     "typescript": "5.9.3"
   },
   "engines": {
@@ -64,6 +68,7 @@
   },
   "externalDependencies": [
     "@vitest/coverage-v8",
-    "vitest"
+    "vitest",
+    "deepmerge"
   ]
 }
