@@ -1,14 +1,31 @@
 # @forsakringskassan/vitest-config
 
-> Försäkringskassan shareable config for Vitest
+> Forsakringskassan shareable config for Vitest
+
+## Contents
+
+This monorepo contains the following presets:
+
+- @forsakringskassan/vitest-config
+- @forsakringskassan/vitest-config-jsdom
+
+The jsdom preset is recommended when writing tests for web applications such as Vue or Svelte.
 
 ## Installation
 
-`npm install --save-dev @forsakringskassan/vitest-config`
+Install Vitest and the preset you want:
 
-You should not have vitest installed in your application, this preset bundles it. If you have it installed since earlier you can uninstall it:
+```bash
+npm install --save-dev vitest @forsakringskassan/vitest-config
+```
 
-`npm rm vitest`
+For a jsdom environment:
+
+```bash
+npm install --save-dev vitest @forsakringskassan/vitest-config-jsdom
+```
+
+`vitest` must be also installed in your project; we do not support [global mode](https://vitest.dev/config/globals).
 
 ## Usage
 
@@ -23,7 +40,20 @@ export default defineConfig({
 });
 ```
 
-### Override default settings
+### Use the jsdom preset
+
+`vite.config.mts`
+
+```diff
+import { defineConfig } from "vitest/config";
++ import { defineTestConfig } from "@forsakringskassan/vitest-config-jsdom";
+
+export default defineConfig({
++    test: defineTestConfig(),
+});
+```
+
+### Override defaults
 
 You can pass your own config to `defineTestConfig` to override defaults:
 

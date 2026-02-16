@@ -1,6 +1,7 @@
 {
-  "name": "@forsakringskassan/vitest-config",
+  "name": "@forsakringskassan/vitest-config-monorepo",
   "version": "1.1.0",
+  "private": true,
   "description": "Försäkringskassan shareable config for Vitest",
   "keywords": [
     "vitest"
@@ -16,21 +17,16 @@
   "license": "MIT",
   "author": "Föräkringskassan",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "bin": {
-    "vitest": "vitest.mjs"
-  },
-  "files": [
-    "dist/",
-    "vitest.mjs"
+  "files": [],
+  "workspaces": [
+    "packages/*"
   ],
   "scripts": {
-    "prebuild": "tsc",
-    "build": "node build.mjs",
+    "build": "lerna run build",
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix .",
     "lint": "run-s prettier:check eslint",
+    "lint:fix": "run-s prettier:write eslint:fix",
     "prepack": "release-prepack --bundle",
     "postpack": "release-postpack",
     "prepublishOnly": "release-prepublish --bundle",
@@ -45,11 +41,7 @@
   },
   "prettier": "@forsakringskassan/prettier-config",
   "release": {
-    "extends": "@forsakringskassan/semantic-release-config"
-  },
-  "dependencies": {
-    "@vitest/coverage-v8": "4.0.18",
-    "vitest": "4.0.18"
+    "extends": "@forsakringskassan/semantic-release-monorepo-config"
   },
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "3.3.3",
@@ -57,18 +49,12 @@
     "@forsakringskassan/prettier-config": "3.3.4",
     "@html-validate/release-scripts": "7.1.0",
     "@tsconfig/node22": "22.0.5",
-    "deepmerge": "4.3.1",
-    "esbuild": "0.27.3",
+    "lerna": "9.0.4",
     "npm-run-all2": "8.0.4",
     "typescript": "5.9.3"
   },
   "engines": {
     "node": ">= 22.12.0",
     "npm": ">= 10.0.0"
-  },
-  "externalDependencies": [
-    "@vitest/coverage-v8",
-    "vitest",
-    "deepmerge"
-  ]
+  }
 }
