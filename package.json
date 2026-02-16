@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "@vitest/coverage-v8": "4.0.18",
+    "jsdom": "28.1.0",
     "vitest": "4.0.18"
   },
   "devDependencies": {
@@ -69,6 +70,7 @@
   "externalDependencies": [
     "@vitest/coverage-v8",
     "vitest",
-    "deepmerge"
+    "deepmerge",
+    "jsdom"
   ]
 }
