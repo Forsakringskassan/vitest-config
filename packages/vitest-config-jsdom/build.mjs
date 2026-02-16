@@ -1,3 +1,4 @@
+import { copyFile } from "node:fs/promises";
 import { build } from "esbuild";
 
 await build({
@@ -9,3 +10,5 @@ await build({
     format: "esm",
     target: "node22",
 });
+
+await copyFile("./src/index.d.ts", "./dist/index.d.ts");

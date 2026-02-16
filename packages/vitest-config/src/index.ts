@@ -11,7 +11,6 @@ export function defineTestConfig(
     userConfig: TestUserConfig = {},
 ): TestUserConfig {
     const defaultConfig: TestUserConfig = {
-        environment: "jsdom",
         coverage: {
             provider: provider as unknown as "v8",
             reporter: ["text", "text-summary", "lcov"],
