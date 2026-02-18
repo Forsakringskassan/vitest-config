@@ -28,10 +28,9 @@
   "scripts": {
     "prebuild": "tsc",
     "build": "node build.mjs",
-    "prepack": "release-prepack --bundle",
+    "prepack": "release-prepack --bundle --retain-scripts",
     "postpack": "release-postpack",
-    "prepublishOnly": "release-prepublish --bundle",
-    "postpublish": "release-postpublish"
+    "prepublishOnly": "release-prepublish --bundle --retain-scripts"
   },
   "dependencies": {
     "@vitest/coverage-v8": "4.0.18",
