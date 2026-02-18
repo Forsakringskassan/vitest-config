@@ -1,7 +1,7 @@
 import { type TestUserConfig } from "vitest/config";
 import deepmerge from "deepmerge";
 
-import { defineTestConfig as defineBaseTestConfig } from "../../vitest-config/src/index";
+import { defineTestConfig as defineBaseTestConfig } from "@forsakringskassan/vitest-config";
 
 function overwriteMerge<T>(_a: T[], b: T[]): T[] {
     return b;
