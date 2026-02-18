@@ -31,6 +31,7 @@
     "postpublish": "release-postpublish"
   },
   "dependencies": {
+    "@forsakringskassan/vitest-config": "1.1.0",
     "@vitest/coverage-v8": "4.0.18",
     "deepmerge": "4.3.1",
     "jsdom": "22.1.0"
