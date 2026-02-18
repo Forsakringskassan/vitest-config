@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## 2.0.0 (2026-02-18)
+
+### ⚠ BREAKING CHANGES
+
+* This package requires node 22.12.0 or newer version.
+This change is due to JSDOM requirements
+
+### Features
+
+* **@forsakringskassan/vitest-config-jsdom, @forsakringskassan/vitest-config:** monorepo (refs SB-4982) b7d2c8a
+* allow override 3a0a8d3
+
+### Bug Fixes
+
+* **@forsakringskassan/vitest-config-jsdom, @forsakringskassan/vitest-config:** build typings with tsc f9bd036
+
+### Code Refactoring
+
+* node 22 9c0701f
+
 ## [1.1.0](https://github.com/Forsakringskassan/vitest-config/compare/v1.0.7...v1.1.0) (2026-01-29)
 
 ### Features

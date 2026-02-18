@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/vitest-config-jsdom",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Försäkringskassan shareable config for Vitest",
   "keywords": [
     "vitest"
@@ -31,7 +31,7 @@
     "postpublish": "release-postpublish"
   },
   "dependencies": {
-    "@forsakringskassan/vitest-config": "1.1.0",
+    "@forsakringskassan/vitest-config": "2.0.0",
     "@vitest/coverage-v8": "4.0.18",
     "deepmerge": "4.3.1",
     "jsdom": "22.1.0"
