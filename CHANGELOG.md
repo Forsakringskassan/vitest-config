@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.0.1 (2026-02-18)
+
+### Bug Fixes
+
+* **@forsakringskassan/vitest-config-jsdom, @forsakringskassan/vitest-config:** update release related scripts e1dbac9
+
 ## 2.0.0 (2026-02-18)
 
 ### ⚠ BREAKING CHANGES
