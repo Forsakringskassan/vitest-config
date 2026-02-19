@@ -26,8 +26,7 @@
     "prebuild": "tsc",
     "build": "node build.mjs",
     "prepack": "release-prepack --bundle --retain-scripts",
-    "postpack": "release-postpack",
-    "prepublishOnly": "release-prepublish --bundle --retain-scripts"
+    "postpack": "release-postpack"
   },
   "dependencies": {
     "@forsakringskassan/vitest-config": "2.0.2",
