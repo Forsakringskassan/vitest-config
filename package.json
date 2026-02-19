@@ -30,7 +30,8 @@
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
     "pretest": "npm run lint",
-    "test": "true"
+    "test": "true",
+    "preversion": "bash scripts/preversion"
   },
   "commitlint": {
     "extends": "@forsakringskassan/commitlint-config/no-jira"

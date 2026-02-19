@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for pkg in packages/*/package.json; do
+    sed '/\(pre\|post\)pack/d' -i "${pkg}"
+done
