@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.0.2 (2026-02-19)
+
+### Bug Fixes
+
+* **@forsakringskassan/vitest-config:** remove reference to missing binary script e770d13
+
 ## 2.0.1 (2026-02-18)
 
 ### Bug Fixes
