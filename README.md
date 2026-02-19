@@ -32,12 +32,12 @@ npm install --save-dev vitest @forsakringskassan/vitest-config-jsdom
 `vite.config.mts`
 
 ```diff
-import { defineConfig } from "vitest/config";
-+ import { defineTestConfig } from "@forsakringskassan/vitest-config";
+ import { defineConfig } from "vitest/config";
++import { defineTestConfig } from "@forsakringskassan/vitest-config";
 
-export default defineConfig({
+ export default defineConfig({
 +    test: defineTestConfig(),
-});
+ });
 ```
 
 ### Use the jsdom preset
@@ -45,12 +45,12 @@ export default defineConfig({
 `vite.config.mts`
 
 ```diff
-import { defineConfig } from "vitest/config";
-+ import { defineTestConfig } from "@forsakringskassan/vitest-config-jsdom";
+ import { defineConfig } from "vitest/config";
++import { defineTestConfig } from "@forsakringskassan/vitest-config-jsdom";
 
-export default defineConfig({
+ export default defineConfig({
 +    test: defineTestConfig(),
-});
+ });
 ```
 
 ### Override defaults
@@ -60,12 +60,12 @@ You can pass your own config to `defineTestConfig` to override defaults:
 `vite.config.mts`
 
 ```diff
-import { defineConfig } from "vitest/config";
-import { defineTestConfig } from "@forsakringskassan/vitest-config";
+ import { defineConfig } from "vitest/config";
+ import { defineTestConfig } from "@forsakringskassan/vitest-config";
 
-export default defineConfig({
-    test: defineTestConfig({
+ export default defineConfig({
+     test: defineTestConfig({
 +        environment: "node",
-    }),
-});
+     }),
+ });
 ```
