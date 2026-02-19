@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.0.3 (2026-02-19)
+
+### Bug Fixes
+
+* **@forsakringskassan/vitest-config-jsdom, @forsakringskassan/vitest-config:** fix missing dependencies 5029cf7
+
 ## 2.0.2 (2026-02-19)
 
 ### Bug Fixes
