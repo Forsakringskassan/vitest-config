@@ -19,9 +19,6 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "bin": {
-    "vitest": "vitest.mjs"
-  },
   "files": [
     "dist/"
   ],
