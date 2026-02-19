@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/vitest-config",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Försäkringskassan shareable config for Vitest",
   "keywords": [
     "vitest"
@@ -25,8 +25,6 @@
   "scripts": {
     "prebuild": "tsc",
     "build": "node build.mjs",
-    "prepack": "release-prepack --bundle --retain-scripts",
-    "postpack": "release-postpack",
     "prepublishOnly": "release-prepublish --bundle --retain-scripts"
   },
   "dependencies": {
