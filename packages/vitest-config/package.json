@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/vitest-config",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "Försäkringskassan shareable config for Vitest",
   "keywords": [
     "vitest"
