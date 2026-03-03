@@ -46,7 +46,7 @@
     "@forsakringskassan/prettier-config": "3.3.5",
     "@html-validate/release-scripts": "7.1.0",
     "@tsconfig/node22": "22.0.5",
-    "lerna": "9.0.4",
+    "lerna": "9.0.5",
     "npm-run-all2": "8.0.4",
     "typescript": "5.9.3"
   },
