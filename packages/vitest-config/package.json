@@ -28,12 +28,12 @@
     "prepublishOnly": "release-prepublish --bundle --retain-scripts"
   },
   "dependencies": {
-    "@vitest/coverage-v8": "4.0.18",
+    "@vitest/coverage-v8": "4.1.0",
     "deepmerge": "4.3.1"
   },
   "devDependencies": {
     "esbuild": "0.27.4",
-    "vitest": "4.0.18"
+    "vitest": "4.1.0"
   },
   "peerDependencies": {
     "vitest": "^4.0.0"
