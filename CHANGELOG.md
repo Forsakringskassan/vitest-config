@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2.2.0 (2026-03-19)
+
+### Features
+
+* **deps:** update dependency jsdom to v29 4fdcc0f
+
+### Bug Fixes
+
+* **deps:** update vitest monorepo to v4.1.0 5d830cb
+
 ## 2.1.0 (2026-02-23)
 
 ### Features
