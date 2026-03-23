@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/vitest-config-jsdom",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Försäkringskassan shareable config for Vitest",
   "keywords": [
     "vitest"
