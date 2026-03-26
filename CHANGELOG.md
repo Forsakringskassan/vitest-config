@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.2.2 (2026-03-26)
+
+### Bug Fixes
+
+* **deps:** update vitest monorepo to v4.1.1 caa92a7
+
 ## 2.2.1 (2026-03-23)
 
 ### Bug Fixes
