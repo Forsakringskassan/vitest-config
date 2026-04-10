@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.2.4 (2026-04-10)
+
+### Bug Fixes
+
+* **deps:** update dependency jsdom to v29.0.2 5812405
+
 ## 2.2.3 (2026-03-29)
 
 ### Bug Fixes
