@@ -2,11 +2,11 @@
     "extends": ["local>forsakringskassan/renovate-config"],
     "packageRules": [
         {
-            "matchPackageNames": ["@vitest/coverage-v8"],
+            "matchPackageNames": ["@vitest/coverage-v8", "jsdom"],
             "rangeStrategy": "bump"
         },
         {
-            "matchPackageNames": ["@vitest/coverage-v8"],
+            "matchPackageNames": ["@vitest/coverage-v8", "jsdom"],
             "matchUpdateTypes": ["patch"],
             "enabled": false
         }
