@@ -1,3 +1,14 @@
 {
-    "extends": ["local>forsakringskassan/renovate-config"]
+    "extends": ["local>forsakringskassan/renovate-config"],
+    "packageRules": [
+        {
+            "matchPackageNames": ["@vitest/coverage-v8"],
+            "rangeStrategy": "bump"
+        },
+        {
+            "matchPackageNames": ["@vitest/coverage-v8"],
+            "matchUpdateTypes": ["patch"],
+            "enabled": false
+        }
+    ]
 }
