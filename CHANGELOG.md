@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.2.8 (2026-04-27)
+
+### Bug Fixes
+
+* **deps:** use range instead of pinned version for `@vitest/coverage-v8` 781caaf
+* **deps:** use range instead of pinned version for `jsdom` 669884c
+
 ## 2.2.7 (2026-04-24)
 
 ### Bug Fixes
