@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.2.9 (2026-05-09)
+
+### Bug Fixes
+
+* **deps:** update dependency jsdom to ^29.1.1 a96023f
+
 ## 2.2.8 (2026-04-27)
 
 ### Bug Fixes
