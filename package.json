@@ -41,7 +41,7 @@
     "extends": "@forsakringskassan/semantic-release-monorepo-config"
   },
   "devDependencies": {
-    "@forsakringskassan/commitlint-config": "3.3.11",
+    "@forsakringskassan/commitlint-config": "3.3.13",
     "@forsakringskassan/eslint-config": "14.1.20",
     "@forsakringskassan/prettier-config": "3.3.9",
     "@html-validate/release-scripts": "7.1.19",
