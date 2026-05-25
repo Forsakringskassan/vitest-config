@@ -44,7 +44,7 @@
     "@forsakringskassan/commitlint-config": "3.6.4",
     "@forsakringskassan/eslint-config": "15.0.0",
     "@forsakringskassan/prettier-config": "3.5.0",
-    "@html-validate/release-scripts": "7.2.2",
+    "@html-validate/release-scripts": "7.2.3",
     "@tsconfig/node22": "22.0.5",
     "lerna": "9.0.7",
     "npm-run-all2": "9.0.0",
