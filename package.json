@@ -47,7 +47,7 @@
     "@html-validate/release-scripts": "7.2.3",
     "@tsconfig/node22": "22.0.5",
     "lerna": "9.0.7",
-    "npm-run-all2": "9.0.0",
+    "npm-run-all2": "9.0.1",
     "typescript": "6.0.3"
   },
   "engines": {
