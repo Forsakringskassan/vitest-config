@@ -27,6 +27,7 @@
     "eslint:fix": "eslint --fix .",
     "lint": "run-s prettier:check eslint",
     "lint:fix": "run-s prettier:write eslint:fix",
+    "prepare": "commitlint-config",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
     "pretest": "npm run lint",
@@ -41,7 +42,7 @@
     "extends": "@forsakringskassan/semantic-release-monorepo-config"
   },
   "devDependencies": {
-    "@forsakringskassan/commitlint-config": "3.6.9",
+    "@forsakringskassan/commitlint-config": "4.0.0",
     "@forsakringskassan/eslint-config": "15.0.17",
     "@forsakringskassan/prettier-config": "3.7.1",
     "@html-validate/release-scripts": "7.2.4",
@@ -53,5 +54,11 @@
   "engines": {
     "node": ">= 22.12.0",
     "npm": ">= 10.0.0"
+  },
+  "allowScripts": {
+    "esbuild": true,
+    "fsevents": false,
+    "nx": false,
+    "unrs-resolver": true
   }
 }
