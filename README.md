@@ -69,3 +69,21 @@ You can pass your own config to `defineTestConfig` to override defaults:
      }),
  });
 ```
+
+### Thread pooling
+
+The Vitest configuration presets enables [thread pooling](https://vitest.dev/config/pool.html#threads) instead of the default to fork processes.
+This is faster on our Windows environments (up to 10x differences measured) but could cause issues with test isolation when `process` or native node addons.
+
+If you run into issues with isolation you can try to change back to `forks`:
+
+```diff
+ import { defineConfig } from "vitest/config";
+ import { defineTestConfig } from "@forsakringskassan/vitest-config";
+
+ export default defineConfig({
+     test: defineTestConfig({
++        pool: "forks",
+     }),
+ });
+```
