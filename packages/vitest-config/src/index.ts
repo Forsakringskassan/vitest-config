@@ -11,6 +11,8 @@ export function defineTestConfig(
     userConfig: TestUserConfig = {},
 ): TestUserConfig {
     const defaultConfig: TestUserConfig = {
+        /* up to 10x faster on windows */
+        pool: "threads",
         coverage: {
             provider: provider as unknown as "v8",
             reporter: ["text", "text-summary", "lcov"],
