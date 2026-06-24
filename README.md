@@ -87,3 +87,41 @@ If you run into issues with isolation you can try to change back to `forks`:
      }),
  });
 ```
+
+## Github Actions
+
+To use with Github actions:
+
+```yaml
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v5
+            - name: Use Node.js
+              uses: actions/setup-node@v6
+            - name: Install dependencies
+              run: npm ci
+            - name: Build
+              run: npm run build
+            - name: Vitest
+              uses: Forsakringskassan/vitest-config@main
+```
+
+`main` can also be replaced by a semantic versioned tag such as `v2.3.0`:
+
+```diff
+-uses: Forsakringskassan/vitest-config@main
++uses: Forsakringskassan/vitest-config@v2.3.0
+```
+
+This is recommended when using a tool such as Renovate to manage dependencies.
+
+**Options**:
+
+| Parameter    | Required | Default  | Description                                                            |
+| ------------ | -------- | -------- | ---------------------------------------------------------------------- |
+| `build`      |          | `false`  | Build project before running tests (using `npm run build`).            |
+| `build-docs` |          | `false`  | Build documentation before running tests (using `npm run build:docs`). |
+| `check-name` |          | `Vitest` | Name of check to report test results to.                               |
