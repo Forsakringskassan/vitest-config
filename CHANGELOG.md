@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.5.0 (2026-06-24)
+
+### Features
+
+* add github action 3b92416
+
 ## 2.4.0 (2026-06-24)
 
 ### Features
