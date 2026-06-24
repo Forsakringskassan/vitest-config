@@ -1,0 +1,47 @@
+name: "Forsakringskassan/vitest-config"
+author: Försäkringskassan
+description: Github action to run unittests with Vitest
+
+branding:
+    icon: git-pull-request
+    color: blue
+
+inputs:
+    build:
+        description: Build project(s) before running tests
+        type: boolean
+        default: false
+    build-docs:
+        description: Build documentation before running tests
+        type: boolean
+        default: false
+    check-name:
+        description: Name of check to report test results to.
+        type: string
+        default: Vitest
+
+runs:
+    using: composite
+    steps:
+        - name: Remove pretest
+          shell: bash
+          run: npm pkg delete scripts.pretest
+        - name: Build package(s)
+          if: inputs.build == 'true'
+          shell: bash
+          run: npm run build
+        - name: Build documentation
+          if: inputs.build-docs == 'true'
+          shell: bash
+          run: npm run build:docs
+        - name: Vitest
+          shell: bash
+          run: npm test
+        - name: Publish test results
+          if: github.event_name == 'pull_request' && (success() || failure())
+          uses: mikepenz/action-junit-report@v6
+          with:
+              report_paths: "**/test-results/vitest-junit.xml"
+              include_passed: false
+              check_annotations: true
+              check_name: ${{ inputs.check-name }}
