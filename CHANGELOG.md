@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.3.0 (2026-06-24)
+
+### Features
+
+* **@forsakringskassan/vitest-config:** enable thread pooling instead of using forks f2f11f1
+
 ## 2.2.9 (2026-05-09)
 
 ### Bug Fixes
