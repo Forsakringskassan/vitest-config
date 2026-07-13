@@ -45,7 +45,7 @@
     "@forsakringskassan/commitlint-config": "4.1.2",
     "@forsakringskassan/eslint-config": "15.3.3",
     "@forsakringskassan/prettier-config": "3.7.7",
-    "@html-validate/release-scripts": "7.3.1",
+    "@html-validate/release-scripts": "7.3.6",
     "@tsconfig/node22": "22.0.5",
     "@types/node": "22.20.0",
     "@typescript/native": "npm:typescript@7.0.2",
