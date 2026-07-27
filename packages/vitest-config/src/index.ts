@@ -24,6 +24,7 @@ export function defineTestConfig(
             exclude: [
                 "**/index.[jt]s",
                 "**/temp/**",
+                "**/*.cy.ts",
                 "**/*.d.ts",
                 "**/__fixtures__/**",
                 "**/generated/**",
