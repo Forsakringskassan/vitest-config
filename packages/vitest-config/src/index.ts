@@ -21,7 +21,7 @@ export function defineTestConfig(
             provider: provider as unknown as "v8",
             reporter: ["text", "text-summary", "lcov"],
             include: ["src/**/*.[jt]s"],
-            exclude: ["**/index.[jt]s", "**/temp/**"],
+            exclude: ["**/index.[jt]s", "**/temp/**", "**/*.d.ts"],
         },
         reporters: [
             "default",
