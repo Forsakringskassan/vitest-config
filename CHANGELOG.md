@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2.5.1 (2026-07-27)
+
+### Bug Fixes
+
+* **@forsakringskassan/vitest-config:** dont collect coverage from `*.d.ts` 8753e7d
+* **@forsakringskassan/vitest-config:** dont collect coverage from cypress component tests 37f068b
+* **@forsakringskassan/vitest-config:** dont collect coverage from generated files 1995c9a
+* **@forsakringskassan/vitest-config:** dont collect coverage from test fixtures 0d25a64
+* **@forsakringskassan/vitest-config:** dont run tests from build folder c794ce6
+* **@forsakringskassan/vitest-config:** ignore temp folder c9a2f8d
+
 ## 2.5.0 (2026-06-24)
 
 ### Features
