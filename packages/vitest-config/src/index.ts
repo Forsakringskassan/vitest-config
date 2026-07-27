@@ -26,6 +26,7 @@ export function defineTestConfig(
                 "**/temp/**",
                 "**/*.d.ts",
                 "**/__fixtures__/**",
+                "**/generated/**",
             ],
         },
         reporters: [
