@@ -36,7 +36,13 @@ export function defineTestConfig(
             ...githubReporter,
         ],
         outputFile: "./test-results/vitest-junit.xml",
-        exclude: ["**/node_modules/**", "**/.git/**", "**/temp/**"],
+        exclude: [
+            "**/node_modules/**",
+            "**/.git/**",
+            "**/build/**",
+            "**/dist/**",
+            "**/temp/**",
+        ],
     };
 
     const resolvedConfig = userConfig
