@@ -22,12 +22,12 @@ export function defineTestConfig(
             reporter: ["text", "text-summary", "lcov"],
             include: ["src/**/*.[jt]s"],
             exclude: [
-                "**/index.[jt]s",
-                "**/temp/**",
                 "**/*.cy.ts",
                 "**/*.d.ts",
                 "**/__fixtures__/**",
                 "**/generated/**",
+                "**/index.[jt]s",
+                "**/temp/**",
             ],
         },
         reporters: [
@@ -37,10 +37,10 @@ export function defineTestConfig(
         ],
         outputFile: "./test-results/vitest-junit.xml",
         exclude: [
-            "**/node_modules/**",
             "**/.git/**",
             "**/build/**",
             "**/dist/**",
+            "**/node_modules/**",
             "**/temp/**",
         ],
     };
