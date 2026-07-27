@@ -21,7 +21,7 @@ export function defineTestConfig(
             provider: provider as unknown as "v8",
             reporter: ["text", "text-summary", "lcov"],
             include: ["src/**/*.[jt]s"],
-            exclude: ["**/index.[jt]s"],
+            exclude: ["**/index.[jt]s", "**/temp/**"],
         },
         reporters: [
             "default",
@@ -29,6 +29,7 @@ export function defineTestConfig(
             ...githubReporter,
         ],
         outputFile: "./test-results/vitest-junit.xml",
+        exclude: ["**/node_modules/**", "**/.git/**", "**/temp/**"],
     };
 
     const resolvedConfig = userConfig
