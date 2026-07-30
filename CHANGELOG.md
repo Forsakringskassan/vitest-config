@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.6.0 (2026-07-30)
+
+### Features
+
+* **deps:** update dependency jsdom to v30 1983bc5
+
 ## 2.5.1 (2026-07-27)
 
 ### Bug Fixes
