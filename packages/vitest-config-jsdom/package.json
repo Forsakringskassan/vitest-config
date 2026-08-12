@@ -34,7 +34,7 @@
     "jsdom": "^30.0.0"
   },
   "devDependencies": {
-    "esbuild": "0.28.1",
+    "esbuild": "0.28.2",
     "vitest": "4.1.10"
   },
   "peerDependencies": {
