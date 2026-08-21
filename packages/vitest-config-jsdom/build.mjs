@@ -8,5 +8,5 @@ await build({
     platform: "node",
     format: "esm",
     target: "node22",
-    external: ["@vue/test-utils"],
+    external: ["@vue/test-utils", "vitest"],
 });
