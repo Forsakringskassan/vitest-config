@@ -51,6 +51,7 @@ You can pass your own config to `defineTestConfig` to override defaults:
 
 This preset installs a setup file which:
 
+- Configures `@fkui/logic` (if present) to reset element id between tests.
 - Configures `@vue/test-utils` (if present) to automatically unmount (destroy) any mounted wrapper.
 - Configures `@vue/test-utils` (if present) to treat Vue.js warnings as errors.
 
@@ -67,7 +68,7 @@ To disable this explicitly set `setupFiles` to an empty array:
  });
 ```
 
-If you need additional setup, you can explicitly include `@forsakringskassan/vitest-config-jsdom/setup` in `setupFiles` or import it from your custom setup file:
+If you need additional setup, you can explicitly include `@forsakringskassan/vitest-config-jsdom/setup` in `setupFiles` (or import it directly from your custom setup file):
 
 ```diff
  import { defineConfig } from "vitest/config";

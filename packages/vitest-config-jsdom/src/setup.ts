@@ -23,6 +23,20 @@ async function setupTestUtils(): Promise<void> {
     enableAutoUnmount(afterEach);
 }
 
+async function setupFkui(): Promise<void> {
+    const { ElementIdService } = await import("@fkui/logic");
+
+    /* reset id generation to ensure we get a stable result no matter which/what
+     * order tests are run */
+    afterEach(() => {
+        ElementIdService.reset();
+    });
+}
+
 if (tryImport("@vue/test-utils")) {
     await setupTestUtils();
+}
+
+if (tryImport("@fkui/logic")) {
+    await setupFkui();
 }
