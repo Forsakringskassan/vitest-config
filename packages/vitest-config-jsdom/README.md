@@ -46,3 +46,38 @@ You can pass your own config to `defineTestConfig` to override defaults:
      }),
  });
 ```
+
+### Setup
+
+This preset installs a setup file which:
+
+- Configures `@vue/test-utils` (if present) to treat Vue.js warnings as errors.
+
+To disable this explicitly set `setupFiles` to an empty array:
+
+```diff
+ import { defineConfig } from "vitest/config";
+ import { defineTestConfig } from "@forsakringskassan/vitest-config-jsdom";
+
+ export default defineConfig({
+     test: defineTestConfig({
++        setupFiles: [],
+     }),
+ });
+```
+
+If you need additional setup, you can explicitly include `@forsakringskassan/vitest-config-jsdom/setup` in `setupFiles` or import it from your custom setup file:
+
+```diff
+ import { defineConfig } from "vitest/config";
+ import { defineTestConfig } from "@forsakringskassan/vitest-config-jsdom";
+
+ export default defineConfig({
+     test: defineTestConfig({
++        setupFiles: [
++            "@forsakringskassan/vitest-config-jsdom/setup"],
++            "./custom-setup.mts",
++        ],
+     }),
+ });
+```

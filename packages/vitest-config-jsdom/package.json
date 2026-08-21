@@ -16,7 +16,20 @@
   },
   "license": "MIT",
   "author": "Föräkringskassan",
+  "sideEffects": [
+    "./dist/setup.js"
+  ],
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./setup": {
+      "types": "./dist/setup.d.ts",
+      "import": "./dist/setup.js"
+    }
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -34,11 +47,18 @@
     "jsdom": "^30.0.0"
   },
   "devDependencies": {
+    "@vue/test-utils": "2.4.11",
     "esbuild": "0.28.2",
     "vitest": "4.1.11"
   },
   "peerDependencies": {
+    "@vue/test-utils": "^2.0.0",
     "vitest": "^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/test-utils": {
+      "optional": true
+    }
   },
   "engines": {
     "node": ">= 22.12.0",
