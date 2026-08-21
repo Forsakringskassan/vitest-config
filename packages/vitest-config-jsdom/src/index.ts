@@ -1,3 +1,4 @@
+import path from "node:path";
 import { type TestUserConfig } from "vitest/config";
 import deepmerge from "deepmerge";
 
@@ -14,6 +15,7 @@ export function defineTestConfig(
     const defaultConfig: TestUserConfig = {
         ...defineBaseTestConfig(),
         environment: "jsdom",
+        setupFiles: [path.join(import.meta.dirname, "setup.js")],
     };
 
     const resolvedConfig = userConfig
