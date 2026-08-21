@@ -1,4 +1,5 @@
 import { build } from "esbuild";
+import pkg from "./package.json" with { type: "json" };
 
 await build({
     entryPoints: ["./src/index.ts", "./src/setup.ts"],
@@ -8,5 +9,5 @@ await build({
     platform: "node",
     format: "esm",
     target: "node22",
-    external: ["@vue/test-utils", "vitest"],
+    external: pkg.externalDependencies,
 });
