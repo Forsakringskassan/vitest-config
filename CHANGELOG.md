@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2.7.0 (2026-08-21)
+
+### Features
+
+* **vue:** automatically reset `@fkui/logic` element id between tests 983239c
+* **vue:** automatically unmount vue wrappers d1072dc
+* **vue:** treat warnings as errors during test 96b130f
+
 ## 2.6.0 (2026-07-30)
 
 ### Features
