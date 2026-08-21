@@ -66,6 +66,8 @@
   },
   "externalDependencies": [
     "@vitest/coverage-v8",
-    "jsdom"
+    "@vue/test-utils",
+    "jsdom",
+    "vitest"
   ]
 }
