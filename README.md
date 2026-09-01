@@ -8,8 +8,9 @@ This monorepo contains the following presets:
 
 - @forsakringskassan/vitest-config
 - @forsakringskassan/vitest-config-jsdom
+- @forsakringskassan/vitest-config-happy-dom
 
-The jsdom preset is recommended when writing tests for web applications such as Vue or Svelte.
+The jsdom & happy-dom preset is recommended when writing tests for web applications such as Vue or Svelte.
 
 ## Installation
 
@@ -23,6 +24,12 @@ For a jsdom environment:
 
 ```bash
 npm install --save-dev vitest @forsakringskassan/vitest-config-jsdom
+```
+
+For a happy-dom environment:
+
+```bash
+npm install --save-dev vitest @forsakringskassan/vitest-config-happy-dom
 ```
 
 `vitest` must be also installed in your project; we do not support [global mode](https://vitest.dev/config/globals).
