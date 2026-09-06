@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.8.1 (2026-09-06)
+
+### Bug Fixes
+
+* **deps:** fix `@vitest/coverage-v8` version for vitest v4 6e33fee
+
 ## 2.8.0 (2026-09-06)
 
 ### Features
