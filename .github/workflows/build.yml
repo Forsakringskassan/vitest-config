@@ -24,3 +24,7 @@ jobs:
               run: npm test --ignore-scripts
             - name: Build
               run: npm run --if-present build
+            - name: Selftest
+              run: |
+                  node packages/vitest-config/dist/index.js
+                  node packages/vitest-config-jsdom/dist/index.js
