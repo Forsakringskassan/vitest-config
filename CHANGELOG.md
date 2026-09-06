@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.8.0 (2026-09-06)
+
+### Features
+
+* **deps:** support vitest v5 6a3b1e3
+
 ## 2.7.0 (2026-08-21)
 
 ### Features
