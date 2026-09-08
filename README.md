@@ -2,6 +2,17 @@
 
 > Forsakringskassan shareable config for Vitest
 
+## Versions
+
+This package does not follow semantic versioning, instead the major version indicates which Vitest version it uses.
+
+| Version                              | Vitest     |
+| ------------------------------------ | ---------- |
+| `@forsakringskassan/vitest-config@4` | `vitest@4` |
+| `@forsakringskassan/vitest-config@5` | `vitest@5` |
+
+Breaking changes can be introduced in minor versions.
+
 ## Contents
 
 This monorepo contains the following presets:

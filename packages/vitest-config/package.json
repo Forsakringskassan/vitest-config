@@ -34,15 +34,15 @@
     "prepublishOnly": "release-prepublish --bundle --retain-scripts"
   },
   "dependencies": {
-    "@vitest/coverage-v8": "^4.0.0 || ^5.0.0",
+    "@vitest/coverage-v8": "^4.0.0",
     "deepmerge": "4.3.1"
   },
   "devDependencies": {
     "esbuild": "0.28.2",
-    "vitest": "5.0.0"
+    "vitest": "4.1.11"
   },
   "peerDependencies": {
-    "vitest": "^4.0.0 || ^5.0.0"
+    "vitest": "^4.0.0"
   },
   "engines": {
     "node": ">= 22.12.0",
