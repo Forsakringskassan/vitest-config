@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 4.0.0 (2026-09-08)
+
+### ⚠ BREAKING CHANGES
+
+* **@forsakringskassan/vitest-config-jsdom, @forsakringskassan/vitest-config:** This version range will only support Vitest v4.
+
+### Features
+
+* **@forsakringskassan/vitest-config-jsdom, @forsakringskassan/vitest-config:** support vitest v4 only 2b5423c
+
 ## 2.8.1 (2026-09-06)
 
 ### Bug Fixes
