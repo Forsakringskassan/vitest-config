@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 5.0.0 (2026-09-08)
+
+### ⚠ BREAKING CHANGES
+
+* **@forsakringskassan/vitest-config-jsdom, @forsakringskassan/vitest-config:** This version range will only support Vitest v5.
+
+### Features
+
+* **@forsakringskassan/vitest-config-jsdom, @forsakringskassan/vitest-config:** support vitest v5 only 96d9ae3
+
 ## 4.0.0 (2026-09-08)
 
 ### ⚠ BREAKING CHANGES
