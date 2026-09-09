@@ -1,0 +1,79 @@
+{
+  "name": "@forsakringskassan/vitest-config-happy-dom",
+  "version": "2.7.0",
+  "description": "Försäkringskassan shareable config for Vitest",
+  "keywords": [
+    "vitest"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/vitest-config#readme",
+  "bugs": {
+    "url": "https://github.com/Forsakringskassan/vitest-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forsakringskassan/vitest-config.git",
+    "directory": "packages/vitest-config-happy-dom"
+  },
+  "license": "MIT",
+  "author": "Föräkringskassan",
+  "sideEffects": [
+    "./dist/setup.js"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./setup": {
+      "types": "./dist/setup.d.ts",
+      "import": "./dist/setup.js"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "prebuild": "tsc",
+    "build": "node build.mjs",
+    "prepublishOnly": "release-prepublish --bundle --retain-scripts"
+  },
+  "dependencies": {
+    "@forsakringskassan/vitest-config": "2.7.0",
+    "@vitest/coverage-v8": "^4.1.0",
+    "deepmerge": "4.3.1",
+    "happy-dom": "^20.12.0"
+  },
+  "devDependencies": {
+    "@fkui/logic": "6.55.0",
+    "@vue/test-utils": "2.5.0",
+    "esbuild": "0.28.2",
+    "vitest": "4.1.11"
+  },
+  "peerDependencies": {
+    "@fkui/logic": "^6.0.0",
+    "@vue/test-utils": "^2.0.0",
+    "vitest": "^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@fkui/logic": {
+      "optional": true
+    },
+    "@vue/test-utils": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">= 22.12.0",
+    "npm": ">= 10.0.0"
+  },
+  "externalDependencies": [
+    "@fkui/logic",
+    "@vitest/coverage-v8",
+    "@vue/test-utils",
+    "happy-dom",
+    "vitest"
+  ]
+}
