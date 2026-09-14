@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 4.0.1 (2026-09-14)
+
+### Bug Fixes
+
+* **deps:** update dependency @vitest/coverage-v8 to ^4.1.11 9853586
+
 ## 4.0.0 (2026-09-08)
 
 ### ⚠ BREAKING CHANGES
