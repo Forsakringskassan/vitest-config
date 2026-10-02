@@ -2,6 +2,7 @@ import provider from "@vitest/coverage-v8";
 
 import { type TestUserConfig } from "vitest/config";
 import deepmerge from "deepmerge";
+import isCi from "is-ci";
 
 /* https://vitest.dev/guide/reporters.html#github-actions-reporter */
 const isGithub = process.env.GITHUB_ACTIONS === "true";
@@ -18,6 +19,7 @@ export function defineTestConfig(
         /* up to 10x faster on windows */
         pool: "threads",
         coverage: {
+            enabled: isCi,
             provider: provider as unknown as "v8",
             reporter: ["text", "text-summary", "lcov"],
             include: ["src/**/*.[jt]s"],
