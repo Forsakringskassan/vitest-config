@@ -4,7 +4,7 @@ concurrency: release-${{ github.ref }}
 on:
     push:
         branches:
-            - release/5.x
+            - main
 
 permissions:
     contents: write
