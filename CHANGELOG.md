@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 5.0.1 (2026-10-05)
+
+### Bug Fixes
+
+* **deps:** update dependency jsdom to ^30.1.0 e9ccd5f
+
 ## 5.0.0 (2026-09-08)
 
 ### ⚠ BREAKING CHANGES
