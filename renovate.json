@@ -1,6 +1,6 @@
 {
     "extends": ["local>forsakringskassan/renovate-config"],
-    "baseBranchPatterns": ["release/4.x", "release/5.x"],
+    "baseBranchPatterns": ["release/4.x", "main"],
     "packageRules": [
         {
             "matchPackageNames": ["@vitest/coverage-v8", "jsdom"],
