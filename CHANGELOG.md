@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 5.0.2 (2026-11-06)
+
+### Bug Fixes
+
+* **deps:** update vitest monorepo to ^5.1.0 1451e69
+
 ## 5.0.1 (2026-10-05)
 
 ### Bug Fixes
