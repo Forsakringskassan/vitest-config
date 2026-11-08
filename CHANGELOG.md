@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 5.1.0 (2026-11-08)
+
+### Features
+
+* **deps:** update dependency jsdom to v31 5767a8b
+
 ## 5.0.2 (2026-11-06)
 
 ### Bug Fixes

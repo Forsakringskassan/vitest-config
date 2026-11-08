@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/vitest-config-monorepo",
-  "version": "5.0.2",
+  "version": "5.1.0",
   "private": true,
   "description": "Försäkringskassan shareable config for Vitest",
   "keywords": [
