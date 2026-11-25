@@ -47,7 +47,7 @@
     "jsdom": "^31.0.0"
   },
   "devDependencies": {
-    "@fkui/logic": "6.65.1",
+    "@fkui/logic": "6.66.0",
     "@vue/test-utils": "2.6.0",
     "esbuild": "0.28.2",
     "vitest": "5.1.1"
