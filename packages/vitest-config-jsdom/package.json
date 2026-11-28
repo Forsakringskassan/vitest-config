@@ -50,7 +50,7 @@
     "@fkui/logic": "6.66.0",
     "@vue/test-utils": "2.6.0",
     "esbuild": "0.28.2",
-    "vitest": "5.1.1"
+    "vitest": "5.1.2"
   },
   "peerDependencies": {
     "@fkui/logic": "^6.0.0",
